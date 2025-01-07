@@ -174,7 +174,6 @@ export const startBot = async () => {
 			client: client,
 			log: log,
 			secret: Keys,
-			wichtelEvents: [],
 		};
 
 		registerCommands(payload);
