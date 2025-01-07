@@ -1,0 +1,8 @@
+{
+	"importMap": "./import_map.json",
+	"tasks": {
+		"dev": "deno run --env-file=.env.dev --allow-read --allow-write --allow-env --allow-net --watch src/main.ts",
+		"start": "deno run --env-file=.env.dev --allow-read --allow-write --allow-env --allow-net src/main.ts",
+		"reload": "deno cache --reload src/main.ts"
+	}
+}

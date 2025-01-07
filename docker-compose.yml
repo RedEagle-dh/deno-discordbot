@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    discordbot:
+        image: secret_santa:latest
+        build:
+            context: .
+        environment:
+            - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+            - APPLICATION_ID=${APPLICATION_ID}
+            - LOG_LEVEL=${LOG_LEVEL}
+            - NODE_ENV=${NODE_ENV}
+        env_file:
+            - .env

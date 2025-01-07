@@ -1,0 +1,7 @@
+.env.dev
+.prettierrc
+.git
+.vscode
+.prettierignore
+deno.md
+.gitignore
