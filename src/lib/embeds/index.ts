@@ -55,12 +55,3 @@ export const getBaseEmbed = () => {
 		})
 		.setTimestamp();
 };
-
-export const partnerEmbed = (user: User) => {
-	return getBaseEmbed()
-		.setTitle('🎅🏻 Secret Santa Partner')
-		.setDescription(
-			`Dein Secret Santa Partner ist: **${user}**\n\nKaufe ihm/ihr ein Geschenk im Wert von 20€ und bringe es am 30.12.2024 mit zu Dave!`,
-		)
-		.setColor(Colors.DarkRed);
-};
