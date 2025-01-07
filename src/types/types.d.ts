@@ -16,7 +16,6 @@ import {
 	User,
 } from '@deps';
 import { Logger } from '../lib/Logger.ts';
-import { WichtelEvent } from '../lib/WichtelEvent.ts';
 
 /**
  * Globale Payload für den Bot, die sicherheitsrelevante Variablen, den Client,
@@ -33,7 +32,6 @@ export type GlobalPayload = {
 	};
 	log: Logger;
 	client: Client<boolean>;
-	wichtelEvents: WichtelEvent[];
 };
 
 /**
